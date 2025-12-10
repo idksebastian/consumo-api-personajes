@@ -9,12 +9,12 @@
 
   background-color: #ffffff;
   border-radius: 20px;
-
   box-shadow: 0 14px 30px rgba(0, 0, 0, 0.08);
+
   font-family: 'Inter', 'Poppins', sans-serif;
 }
 
-/* ---------- IMAGEN ---------- */
+/* Imagen */
 
 .detail-media {
   display: flex;
@@ -29,11 +29,10 @@
 
   border-radius: 16px;
   background-color: #f4f4f4;
-
   box-shadow: 0 10px 22px rgba(0, 0, 0, 0.18);
 }
 
-/* ---------- INFO ---------- */
+/* Info */
 
 .detail-info {
   display: flex;
@@ -44,11 +43,11 @@
 .detail-info h2 {
   font-size: 38px;
   font-weight: 800;
-  color: #111;
   margin: 0;
+  color: #111;
 }
 
-/* ---------- STATS ---------- */
+/* Stats */
 
 .detail-stats {
   display: grid;
@@ -67,10 +66,9 @@
   font-size: 13px;
   font-weight: 600;
   color: #888;
-  margin-bottom: 4px;
 }
 
-/* ---------- DESCRIPCIÓN ---------- */
+/* Descripción */
 
 .detail-description {
   font-size: 16px;
@@ -79,7 +77,7 @@
   max-width: 620px;
 }
 
-/* ---------- RESPONSIVE ---------- */
+/* Responsive */
 
 @media (max-width: 900px) {
   .detail {
@@ -87,19 +85,12 @@
     padding: 28px;
   }
 
-  .detail-media {
-    justify-content: center;
-  }
-
-  .detail-info h2 {
+  .detail-info h2,
+  .detail-description {
     text-align: center;
   }
 
   .detail-stats {
     justify-content: center;
-  }
-
-  .detail-description {
-    text-align: center;
   }
 }

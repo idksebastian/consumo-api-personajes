@@ -1,11 +1,23 @@
 @if (data) {
   <div class="detail">
-    <img [src]="data.image" class="detail-img">
-    <h2>{{ data.name }}</h2>
-    <p>ID: {{ data.id }}</p>
-    <p>Raza: {{ data.race }}</p>
-    <p>Descripcion: {{ data.description }}</p>
-    <p>ki: {{ data.ki }}</p>
-    
+
+    <div class="detail-media">
+      <img [src]="data.image" class="detail-img" alt="{{ data.name }}">
+    </div>
+
+    <div class="detail-info">
+      <h2>{{ data.name }}</h2>
+
+      <div class="detail-stats">
+        <p><span>ID</span> {{ data.id }}</p>
+        <p><span>Raza</span> {{ data.race }}</p>
+        <p><span>Ki</span> {{ data.ki }}</p>
+      </div>
+
+      <p class="detail-description">
+        {{ data.description }}
+      </p>
+    </div>
+
   </div>
 }

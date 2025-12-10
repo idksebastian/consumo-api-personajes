@@ -1,8 +1,13 @@
-<h2>simpsons</h2>
+<h2 class="title">Simpsons</h2>
 
-@for (p of characters; track p.id) {
-  <div class="card" [routerLink]="['/simpsons', p.id]">
-    <img src="https://cdn.thesimpsonsapi.com/500{{p.portrait_path}}" alt="">
-    <h3>{{ p.name }}</h3>
-  </div>
-}
+<div class="list">
+  @for (p of characters; track p.id) {
+    <div class="card" [routerLink]="['/simpsons', p.id]">
+      <img
+        src="https://cdn.thesimpsonsapi.com/500{{ p.portrait_path }}"
+        alt="{{ p.name }}"
+      >
+      <h3>{{ p.name }}</h3>
+    </div>
+  }
+</div>

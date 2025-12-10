@@ -1,10 +1,28 @@
 @if (data) {
   <div class="detail">
-    <img src="https://cdn.thesimpsonsapi.com/500{{data.portrait_path}}" class="detail-img">
-    <h2>{{ data.name }}</h2>
-    <p>ID: {{ data.id }}</p>
-    <p>fecha de nacimiento:{{data.birthdate}}</p>
-    <p>género: {{data.gender}}</p>
-    <p>Frases: {{data.phrases}}</p>
+
+    <div class="detail-media">
+      <img
+        src="https://cdn.thesimpsonsapi.com/500{{ data.portrait_path }}"
+        class="detail-img"
+        alt="{{ data.name }}"
+      >
+    </div>
+
+    <div class="detail-info">
+      <h2>{{ data.name }}</h2>
+
+      <div class="detail-stats">
+        <p><span>ID</span> {{ data.id }}</p>
+        <p><span>Nacimiento</span> {{ data.birthdate }}</p>
+        <p><span>Género</span> {{ data.gender }}</p>
+      </div>
+
+      <div class="detail-phrases">
+        <span>Frases</span>
+        <p>{{ data.phrases }}</p>
+      </div>
+    </div>
+
   </div>
 }
