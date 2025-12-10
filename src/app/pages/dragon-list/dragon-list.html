@@ -1,0 +1,11 @@
+<h2 class="title">Dragon Ball</h2>
+
+<div class="list-container">
+  @for (p of personajes; track p.id) {
+    <div class="card" [routerLink]="['/dragon', p.id]">
+      <img [src]="p.image" alt="{{ p.name }}">
+      <h3 class="card-title">{{ p.name }}</h3>
+      <div class="separator"></div>
+    </div>
+  }
+</div>

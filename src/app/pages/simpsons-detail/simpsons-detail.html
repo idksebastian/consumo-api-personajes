@@ -1,0 +1,10 @@
+@if (data) {
+  <div class="detail">
+    <img src="https://cdn.thesimpsonsapi.com/500{{data.portrait_path}}" class="detail-img">
+    <h2>{{ data.name }}</h2>
+    <p>ID: {{ data.id }}</p>
+    <p>fecha de nacimiento:{{data.birthdate}}</p>
+    <p>género: {{data.gender}}</p>
+    <p>Frases: {{data.phrases}}</p>
+  </div>
+}
